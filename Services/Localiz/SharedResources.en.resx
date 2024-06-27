@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApartmentNotFound" xml:space="preserve">
+    <value>Apartment Not Found !</value>
+  </data>
+  <data name="ApartmentToWrongOwner" xml:space="preserve">
+    <value>apartment not belong to this user!!</value>
+  </data>
+  <data name="CannotComment" xml:space="preserve">
+    <value>Can't Comment,Your Limit Comments is Only 3.</value>
+  </data>
+  <data name="CannotDeleteAdmin" xml:space="preserve">
+    <value>Cann't Delete Admin</value>
+  </data>
+  <data name="CannotDeleteOwner" xml:space="preserve">
+    <value>Cann't Delete Owner</value>
+  </data>
+  <data name="CannotDeleteStudent" xml:space="preserve">
+    <value>Cann't Delete Student</value>
+  </data>
+  <data name="CannotReact" xml:space="preserve">
+    <value>Can't React,You Already reacted.</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password must be like Password !!</value>
+  </data>
+  <data name="CorrectGender" xml:space="preserve">
+    <value>Just Male Or Female !!</value>
+  </data>
+  <data name="CorrectUserType" xml:space="preserve">
+    <value>Enter User Or Owner</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>Enter Valid Email please.</value>
+  </data>
+  <data name="EmailConfirm" xml:space="preserve">
+    <value>Email Confirmed Successfully </value>
+  </data>
+  <data name="EmailNotConfirm" xml:space="preserve">
+    <value>Email Not Confirmed !</value>
+  </data>
+  <data name="ExistName" xml:space="preserve">
+    <value>Already Exist this Name</value>
+  </data>
+  <data name="ExistStudents" xml:space="preserve">
+    <value>Exist Students!!</value>
+  </data>
+  <data name="Faild" xml:space="preserve">
+    <value>Faild !</value>
+  </data>
+  <data name="FaildInImages" xml:space="preserve">
+    <value>Faild In Images</value>
+  </data>
+  <data name="FaildInNameOrEmail" xml:space="preserve">
+    <value>Faild In Name Or Email</value>
+  </data>
+  <data name="FaildSaveCoverImg" xml:space="preserve">
+    <value>Faild in Cover Image </value>
+  </data>
+  <data name="FaildSaveRoyal" xml:space="preserve">
+    <value>Faild in Saving Royal Document</value>
+  </data>
+  <data name="FaildSaveVid" xml:space="preserve">
+    <value>Faild in Saving Video</value>
+  </data>
+  <data name="FaildToLogin" xml:space="preserve">
+    <value>Name Or Password is invalid..!</value>
+  </data>
+  <data name="idBigerThan0" xml:space="preserve">
+    <value>id can't be 0.</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Invalid Password</value>
+  </data>
+  <data name="Max150" xml:space="preserve">
+    <value>maximum length is 150.</value>
+  </data>
+  <data name="MaxSizePic" xml:space="preserve">
+    <value>Max Size of Picture is 1 MB.</value>
+  </data>
+  <data name="MaxSizeVid" xml:space="preserve">
+    <value>Max Size of Video is 100 MB.</value>
+  </data>
+  <data name="Min2" xml:space="preserve">
+    <value>Minimum Length is 2 .</value>
+  </data>
+  <data name="Min4" xml:space="preserve">
+    <value>Minimum Length is 4 .</value>
+  </data>
+  <data name="Min6" xml:space="preserve">
+    <value>Minimum Length is 6 .</value>
+  </data>
+  <data name="NoAccToEmail" xml:space="preserve">
+    <value>No Account To this Email !</value>
+  </data>
+  <data name="NoEmpty" xml:space="preserve">
+    <value>This Field is REQIERD can't ba null</value>
+  </data>
+  <data name="NoNull" xml:space="preserve">
+    <value>This Field is REQIERD can't ba null</value>
+  </data>
+  <data name="NoSpaceInName" xml:space="preserve">
+    <value>Name can't contain spaces </value>
+  </data>
+  <data name="NotConfirmed" xml:space="preserve">
+    <value>Not Confirmed !!!</value>
+  </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>Not Found here</value>
+  </data>
+  <data name="NoUserOrApartment" xml:space="preserve">
+    <value>No user Or Apartment with this id!</value>
+  </data>
+  <data name="PhoneDigit" xml:space="preserve">
+    <value>Phone Must Contain only Digits !</value>
+  </data>
+  <data name="PhoneLenght" xml:space="preserve">
+    <value>Phone must be 11 digits only</value>
+  </data>
+  <data name="Reqierd" xml:space="preserve">
+    <value>This Field is requierd</value>
+  </data>
+  <data name="ResetPasswordSent" xml:space="preserve">
+    <value>Reset Password Sent Successfully</value>
+  </data>
+  <data name="StdInApartment" xml:space="preserve">
+    <value>Can't Enroll in two apartments in same time..!</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>User Not Found !</value>
+  </data>
+  <data name="WrongCode" xml:space="preserve">
+    <value>Wrong Code !</value>
+  </data>
+</root>
