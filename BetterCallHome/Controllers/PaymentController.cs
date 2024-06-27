@@ -1,7 +1,6 @@
 ﻿using BetterCallHomeWeb.Base;
 using Core.Features.Users.Commands.Models.PaymentRequest;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BetterCallHomeWeb.Controllers

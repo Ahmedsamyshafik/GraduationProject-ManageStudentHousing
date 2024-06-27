@@ -30,6 +30,7 @@
     <Folder Include="wwwroot\AccountPics\" />
     <Folder Include="wwwroot\ApartmentPics\" />
     <Folder Include="wwwroot\ApartmentVids\" />
+    <Folder Include="wwwroot\Test\" />
     <Folder Include="wwwroot\RoyalDocPics\" />
   </ItemGroup>
 
