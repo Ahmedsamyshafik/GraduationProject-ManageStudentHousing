@@ -1,12 +1,12 @@
 ﻿using Core.Bases;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Text.Json;
 
 namespace Core.MiddleWare
 {
+
     public class ErrorHandlerMiddleware
     {
         private readonly RequestDelegate _next;
@@ -28,6 +28,7 @@ namespace Core.MiddleWare
                 response.ContentType = "application/json";
                 var responseModel = new Response<string>() { Succeeded = false, Message = error?.Message };
                 //TODO:: cover all validation errors
+                var ee = error;
                 switch (error)
                 {
                     case UnauthorizedAccessException e:
@@ -37,7 +38,7 @@ namespace Core.MiddleWare
                         response.StatusCode = (int)HttpStatusCode.Unauthorized;
                         break;
 
-                    case ValidationException e:
+                    case FluentValidation.ValidationException e: // ValidationException
                         // custom validation error
                         responseModel.Message = error.Message;
                         responseModel.StatusCode = HttpStatusCode.UnprocessableEntity;
@@ -57,6 +58,9 @@ namespace Core.MiddleWare
                         response.StatusCode = (int)HttpStatusCode.BadRequest;
                         break;
                     case Exception e:
+                        var ExcepStatus = e.GetBaseException().ToString();
+                        var ExcepStatus2 = e.GetType().ToString();
+
                         if (e.GetType().ToString() == "ApiException")
                         {
                             responseModel.Message += e.Message;
@@ -68,6 +72,7 @@ namespace Core.MiddleWare
                         responseModel.Message += e.InnerException == null ? "" : "\n" + e.InnerException.Message;
 
                         responseModel.StatusCode = HttpStatusCode.InternalServerError;
+
                         response.StatusCode = (int)HttpStatusCode.InternalServerError;
                         break;
 
@@ -85,4 +90,6 @@ namespace Core.MiddleWare
         }
     }
 
+
 }
+

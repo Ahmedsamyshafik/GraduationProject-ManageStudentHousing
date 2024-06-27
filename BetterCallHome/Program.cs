@@ -1,4 +1,5 @@
 using Core;
+using Core.MiddleWare;
 using Domin.Models;
 using Domin.Seeding;
 using Infrastructure.Data;
@@ -186,6 +187,10 @@ app.UseSwaggerUI();
 var options = app.Services.GetService<IOptions<RequestLocalizationOptions>>();
 app.UseRequestLocalization(options.Value);
 #endregion
+
+//Using my MiddleWare..
+app.UseMiddleware<ErrorHandlerMiddleware>();
+
 
 app.UseHttpsRedirection();
 

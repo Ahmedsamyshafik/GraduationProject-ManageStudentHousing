@@ -109,7 +109,9 @@ namespace Core.Features.Users.Commands.Validators
         }
         private bool CorrectUserType(string g)
         {
-            if (string.IsNullOrEmpty(g) || g.ToLower() != "user" || g.ToLower() != "owner")
+            if (string.IsNullOrEmpty(g))
+                return false;
+            if (g.ToLower() != "user" && g.ToLower() != "owner")
                 return false;
             return true;
         }
